@@ -19,7 +19,7 @@ export class StudentsComponent {
     'email',
     'mobile',
     'gender',
-    'edit',
+    'edit'
   ];
   dataSource: MatTableDataSource<Student> = new MatTableDataSource<Student>();
   @ViewChild(MatPaginator) matPaginator!: MatPaginator;
@@ -55,4 +55,5 @@ export class StudentsComponent {
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
   }
+
 }
