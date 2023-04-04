@@ -11,8 +11,8 @@
         class="search-input"
         placeholder="Search students"
         [(ngModel)]="filterString"
-        (keyup)="filterStudents()"
-      />
+        (keyup)="filterStudents()"/>
+        <a routerLink="/students/add" mat-raised-button color="primary" class="ml-1">Add New Student </a>
     </div>
   </div>
   <div class="mt-1 mat-elevation-z8">
